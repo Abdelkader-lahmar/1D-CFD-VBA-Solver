@@ -1,0 +1,6 @@
+patankarFixedValueFvPatchFields.C
+upstreamGrads.C
+patankarLinearUpwinds.C
+patankarLimitedSchemes.C
+
+LIB = $(FOAM_USER_LIBBIN)/libPatankar

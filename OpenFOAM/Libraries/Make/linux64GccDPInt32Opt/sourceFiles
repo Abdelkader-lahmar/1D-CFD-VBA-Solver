@@ -1,0 +1,7 @@
+SOURCE = \
+patankarFixedValueFvPatchFields.C \
+upstreamGrads.C \
+patankarLinearUpwinds.C \
+patankarLimitedSchemes.C \
+
+# sources

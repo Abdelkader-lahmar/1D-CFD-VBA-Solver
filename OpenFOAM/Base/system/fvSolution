@@ -1,0 +1,34 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      fvSolution;
+}
+
+solvers
+{
+    T
+    {
+        solver          PBiCGStab;
+        preconditioner  DILU;
+        tolerance       1e-9;
+        relTol          0;
+    }
+}
+
+SIMPLE
+{
+    residualControl
+    {
+        T               1e-6;
+    }
+}
+
+relaxationFactors
+{
+    equations
+    {
+        T               0.7;
+    }
+}
